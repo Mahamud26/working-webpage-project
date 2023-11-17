@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contact us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact us</h1>
+    </section>
+
+<!-- contact us -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235850.81210205628!2d88.18255150744763!3d22.535343450434393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2z4KaV4Kay4KaV4Ka-4Kak4Ka-LCDgppPgpq_gprzgp4fzprjgp43gpp8g4Kas4KeH4KaZ4KeN4KaX4Kay!5e0!3m2!1sbn!2sin!4v1699877308537!5m2!1sbn!2sin" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" refferpolicy="no-reffer-when-downgrade"></iframe>
+
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>ABC Road, A12 Building</h5>
+                    <p>Kolkata, West Bengal, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+91 1234567890</h5>
+                    <p>Monday to Saturday, 11AM to 5PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>abcde123@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" id="" placeholder="Enter your name" required="">
+                <input type="email" name="email" id="" placeholder="Enter Email address" required="">
+                <input type="text" name="" id="subject" placeholder="Enter your subject" required="">
+                <textarea rows="8" name="message" placeholder="Message" required=""></textarea>
+                <button type="submit" class="btn-1 red-btn">Send Message</button>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem suscipit voluptas quo veniam laboriosam saepe, iusto autem dolorem commodi! <br> Laborum commodi dolores assumenda magni ea itaque deleniti maiores id!</p>
+
+    <div class="icon">
+        <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+    </div>
+</section>
+
+<!-- Copyright -->
+<section class="copy">
+    <p> Made by <b>Mahamudur Rh. Molla</b> </p>
+    <p>&copy; 2023; All rights reserved</p>
+</section>
+
+
+</body>
+
+
+
+<!--.js for menu (mobile ver.)-->
+<script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</html>
